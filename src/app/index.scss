@@ -1,24 +1,11 @@
-.browsehappy {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
-}
-
 body {
   margin: 0;
 }
-
 a {
   text-decoration: none;
 }
-
 .container {
-  width: 1170px;
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  width: 100%;
 }
 
 .navbar {
@@ -31,8 +18,7 @@ a {
     float: left;
     color: lightgrey;
     padding: 15px 15px;
-    font-size: 18px;
-    line-height: 20px;
+    font-size: 1.5em;
     height: 50px;
   }
 
@@ -50,9 +36,8 @@ a {
         color: white;
         position: relative;
         display: block;
-        padding: 15px;
-        line-height: 20px;
-      }
+      	padding: 15px;
+		}
       &.active a {
         background-color: black;
       }
@@ -60,57 +45,12 @@ a {
   }
 }
 
-.jumbotron {
-  padding: 60px;
-  margin-bottom: 30px;
-  background-color: gainsboro;
-  border-radius: 6px;
-  text-align: center;
+.objcontainer {
+	background-color: gainsboro;
+	border-radius: 6px;
+	text-align: center;
+	clear: both;	
 }
-
-.btn {
-  display: inline-block;
-  text-align: center;
-  vertical-align: middle;
-  cursor: pointer;
-  border: 1px solid transparent;
-  color: white;
-  background-color: #5cb85c;
-  border-color: #4cae4c;
-  padding: 10px 16px;
-  font-size: 18px;
-  line-height: 1.33;
-  border-radius: 6px;
-}
-
-.col {
-  float: left;
-  width: 33.33%;
-  position: relative;
-  padding-left: 15px;
-  padding-right: 15px;
-  box-sizing: border-box;
-
-  .thumbnail {
-    height: 200px;
-    border: 1px solid lightgrey;
-    border-radius: 4px;
-    margin-bottom: 20px;
-
-    .caption {
-      padding: 9px;
-    }
-
-    img.pull-right {
-      width: 50px;
-    }
-  }
-}
-
-.pull-right {
-  float: right;
-}
-
 hr {
   clear: both;
 }

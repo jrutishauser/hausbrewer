@@ -8,7 +8,6 @@ angular.module('hausbrewer', ['ui.router'])
         templateUrl: 'app/main/main.html',
         controller: 'MainCtrl'
       });
-
     $urlRouterProvider.otherwise('/');
   })
 ;
