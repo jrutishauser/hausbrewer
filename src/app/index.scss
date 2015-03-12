@@ -7,7 +7,13 @@ a {
 .container {
   width: 100%;
 }
-
+.landingnav {
+		text-align: center;
+	a { 
+		margin-right: 2em;
+		margin-left: 2em;
+}
+}
 .navbar {
   position: relative;
   min-height: 50px;
