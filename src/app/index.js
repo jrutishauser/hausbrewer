@@ -11,9 +11,15 @@ angular.module('hausbrewer', ['ui.router'])
       })
 	  .state('landing', {
 	  	url: '/landing',
-	  	templateURL: 'app/landing/landing.html',
+	  	templateUrl: 'app/landing/landing.html',
 		controller: 'LandCtrl',
 		controllerAs: 'land'
+		})
+		.state('landing.recipes', {
+		url: '/recipes',
+		templateUrl: 'app/recipes/recipes.html',
+		controller: 'RecipeCtrl',
+		controllerAs: 'recipe'
 		})
 	  ;//end chained controllers
     $urlRouterProvider.otherwise('/');

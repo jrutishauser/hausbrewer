@@ -2,4 +2,6 @@
 
 angular.module('hausbrewer')
   .controller('LandCtrl', function () {
+    
+    console.log("hello")
   });
