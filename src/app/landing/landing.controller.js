@@ -1,5 +1,5 @@
 'use strict';
 
 angular.module('hausbrewer')
-  .controller('MainCtrl', function () {
+  .controller('LandingCtrl', function () {
   });
