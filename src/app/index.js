@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('hausbrewer', ['ui.router'])
+angular.module('hausbrewer', ['ui.router', 'firebase'])
   .config(function ($stateProvider, $urlRouterProvider) {
     $stateProvider
       .state('home', {
