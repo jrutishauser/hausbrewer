@@ -1,6 +1,6 @@
 'use strict';
 
 angular.module('hausbrewer')
-  .controller('NavbarCtrl', function () {
-    this.date = new Date();
+  .controller('NavbarCtrl', function (Auth) {
+  	this.logout = Auth.logout;
   });
