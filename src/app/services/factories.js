@@ -13,7 +13,7 @@ angular.module('hausbrewer')
 		},
 		fbLogin: function(){
 		
-			return auth.authWithOAuthPopup("facebook", function(error, authData){
+			return auth.authWithOAuthPopup('facebook', function(error, authData){
 				console.log(authData);
 			if (error) {
 			console.log('Login Failed!', error);
