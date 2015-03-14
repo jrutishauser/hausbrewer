@@ -2,8 +2,9 @@
 
 angular.module('hausbrewer')
   .controller('LandCtrl', function (Auth) {
-   	this.loggedIn(); 
 	console.log('landing page!');
- 	console.log(landing.authData) 
-  
+ 	Auth.onAuth(function(user){
+		//console.log(this.auth);	
+	});
+	console.log('banana');
   });

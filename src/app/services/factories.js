@@ -40,14 +40,16 @@ angular.module('hausbrewer')
 		return null;	
 	}
 	//set facebook user as child of users
-	var fbID = auth.child('users').child(authdUser.facebook.id);
+	var user = auth.child('users').child(authdUser.facebook.id);
 	
 	//sending to firebase
-	fbID.update({
+	user.update({
 		fb: authdUser.facebook,
 		uid: authdUser.facebook.id,
 		fullName: authdUser.facebook.displayName
 	});
+	user = $firebaseObject(auth.child(authdUser.facebook.id));
+	return user;
 	}
 	})
 	;//end it all
