@@ -27,6 +27,12 @@ angular.module('hausbrewer', ['ui.router', 'firebase'])
 		controller: 'FermentCtrl',
 		controllerAs: 'ferment'
 		})
+		.state('addarecipe', {
+		url: '/addarecipe',
+		templateUrl: 'app/addarecipe/addarecipe.html',
+		controller: 'addarecipeCtrl',
+		controllerAs: 'addrec'
+		})
 	  ;//end chained controllers
     $urlRouterProvider.otherwise('/');
   })
