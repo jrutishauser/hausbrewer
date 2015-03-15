@@ -9,15 +9,11 @@ angular.module('hausbrewer')
 		onAuth: function(creds){
 			auth.onAuth(function(data){
 				creds(updateUser(data));
-				console.log('data in creds');
-				console.log(data);	
 			});
 		},
 		fbLogin: function(){
 		
 			return auth.authWithOAuthPopup('facebook', function(error, authData){
-				console.log('authData');
-				console.log(authData);
 			if (error) {
 			console.log('Login Failed!', error);
 			} else {
@@ -38,8 +34,6 @@ angular.module('hausbrewer')
 		}	
 	};
 	function updateUser(authdUser){
-		console.log('authdUser');
-		console.log(authdUser);
 	if ( authdUser === null){
 		return null;	
 	}
@@ -52,13 +46,12 @@ angular.module('hausbrewer')
 		uid: authdUser.facebook.id,
 		fullName: authdUser.facebook.displayName
 	});
-	userInfo = $firebaseObject(auth.child('users').child(authdUser.facebook.id));
-	console.log('userinfo');
-	console.log(userInfo);	
-	console.log(userInfo.$id.fullName);	
+	user = $firebaseObject(auth.child('users').child(authdUser.facebook.id));
+	console.log('user');
+	console.log(user);	
+	console.log(user.fullName);	
+	return user;
 	}
-	console.log('again!');
-	console.log(userInfo);	
-	return userInfo;
+	//console.log('again!');
 	})
 	;//end it all
