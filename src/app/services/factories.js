@@ -47,9 +47,6 @@ angular.module('hausbrewer')
 		fullName: authdUser.facebook.displayName
 	});
 	user = $firebaseObject(auth.child('users').child(authdUser.facebook.id));
-	console.log('user');
-	console.log(user);	
-	console.log(user.fullName);	
 	return user;
 	}
 	//console.log('again!');
