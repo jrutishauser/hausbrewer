@@ -50,12 +50,30 @@ a {
     }
   }
 }
-
+.recipeform {
+	label {
+		display: block;
+		margin-top: 1em;
+	}
+	input { 
+		display: block;
+		margin: 0 auto;
+	}
+	button {
+		margin-top: 1em;
+		font-size: 1.5em;
+		color: green;
+		margin-bottom: 0.5em;
+	}
+}
+.canceladdrec {
+	color: red;
+}
 .objcontainer {
 	background-color: gainsboro;
 	border-radius: 6px;
 	text-align: center;
-	clear: both;	
+	clear: both;
 }
 hr {
   clear: both;
