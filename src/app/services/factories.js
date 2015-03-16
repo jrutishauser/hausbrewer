@@ -4,7 +4,6 @@ angular.module('hausbrewer')
 	.factory('Auth', function($firebaseObject, $state){
 		var auth = new Firebase('https://hausbrewer.firebaseio.com/');
 		var currentUser = {};	
-		var userInfo = {};	
 	return {
 		onAuth: function(creds){
 			auth.onAuth(function(data){

@@ -1,9 +1,36 @@
 
-	<div class="objcontainer">
-			<p>time to add a recipe</p> 
-  
-			<a ui-sref='landing.recipe'>back to the landing page</a> 
-	</div><!--objectcontainer div -->
+<div class="objcontainer">			
+	<p>time to add a recipe</p> 
+	<section class='recipeform'>
+		<form class='add-a-recipe' ng-submit='addrec.submitRecipe(addarec.newRec)'>
+		<label>Recipe Name</label>	
+		<input type='text' class='recipename' ng-model='addarec.newRec.recipename' 
+		placeholder='Recipe Name' value='recipename'>	
+		<label>Grains</label>	
+		<input type='text' class='addgrain' ng-model='addarec.newRec.grain1' 
+		placeholder='Grain'>
+		<input type='number' class='grainnumber' ng-model='addarec.newRec.grainqty1'
+		placeholder='in lbs' step='any'>	
+		<label>Hops</label>
+		<input type='text' class='addhops' ng-model='addarec.newRec.hop1' 
+		placeholder='Hops'>	
+		<input type='number' class='hopnumber' ng-model='addarec.newRec.hopqty1' 
+		placeholder='in ozs' step='any'>	
+		<label>Other Aditions</label>
+		<input type='text' class='addother' ng-model='addarec.newRec.other1' 
+		placeholder='Misc. Addition'>	
+		<input type='number' class='miscnumber' ng-model='addarec.newRec.otherqty1'
+		placeholder='in ozs' step='any'>	
+		<label>Yeast</label>
+		<input type='text' class='addyeast' ng-model='addarec.newRec.yeast1' 
+		placeholder='Yeast'>
+		<input type='number' class='yeastnumber' ng-model='addarec.newRec.yeastqty1'
+		placeholder='pkgs'>	
+		<button class='addrecipebut' value='Add Recipe'>Add Recipe</button>	
+		</form>	
+	</section>		
+	<a ui-sref='landing.recipe'>back to the landing page</a> 
+</div><!--objectcontainer div -->
   
   <hr>
   <div class="footer">

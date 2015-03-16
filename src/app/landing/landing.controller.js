@@ -7,7 +7,5 @@ angular.module('hausbrewer')
 	console.log('landing page!');
  	Auth.onAuth(function(user){
 		self.user = user;	
-
 	});
-	//console.log(users.authdUser);
   });
