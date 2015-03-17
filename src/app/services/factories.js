@@ -48,6 +48,5 @@ angular.module('hausbrewer')
 	user = $firebaseObject(auth.child('users').child(authdUser.facebook.id));
 	return user;
 	}
-	//console.log('again!');
 	})
 	;//end it all
