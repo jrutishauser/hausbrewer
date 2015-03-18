@@ -33,6 +33,12 @@ angular.module('hausbrewer', ['ui.router', 'firebase'])
 		controller: 'addarecipeCtrl',
 		controllerAs: 'addrec'
 		})
+		.state('singlerecipe', {
+		url: '/:user/:singlerecipe',
+		templateUrl: 'app/singlerecipe/singlerecipe.html',
+		controller: 'SinglerecipeCtrl',
+		controllerAs: 'singlerec'
+		})
 	  ;//end chained controllers
     $urlRouterProvider.otherwise('/');
   })
