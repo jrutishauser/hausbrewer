@@ -56,7 +56,6 @@ a {
 		margin-top: 1em;
 	}
 	input { 
-		display: block;
 		margin: 0 auto;
 	}
 	button {
@@ -64,6 +63,11 @@ a {
 		font-size: 1.5em;
 		color: green;
 		margin-bottom: 0.5em;
+	}
+	.qty {
+		width: 4em;	
+	}
+	.ing {
 	}
 }
 .canceladdrec {

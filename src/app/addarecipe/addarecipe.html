@@ -7,26 +7,77 @@
 		<input type='text' class='recipename' ng-model='addarec.newRec.recipename' 
 		placeholder='Recipe Name' value='recipename'>	
 		<label>Grains</label>	
-		<input type='text' class='addgrain' ng-model='addarec.newRec.grain1' 
-		placeholder='Grain'>
-		<input type='number' class='grainnumber' ng-model='addarec.newRec.grainqty1'
-		placeholder='in lbs' step='any'>	
+		<section class='grainssection'>	
+		<input type='number' class='grainnumber qty' ng-model='addarec.newRec.grainqty1'
+		placeholder='lbs' step='any'>
+		<input type='text' class='addgrain ing' ng-model='addarec.newRec.grain1' 
+	 placeholder='Grain'><br>
+		<input type='number' class='grainnumber qty' ng-model='addarec.newRec.grainqty2'
+		placeholder='lbs' step='any'>
+		<input type='text' class='addgrain ing' ng-model='addarec.newRec.grain2' 
+	 placeholder='Grain'><br>
+		<input type='number' class='grainnumber qty' ng-model='addarec.newRec.grainqty3'
+		placeholder='lbs' step='any'>
+		<input type='text' class='addgrain ing' ng-model='addarec.newRec.grain3' 
+	 placeholder='Grain'><br>
+		<input type='number' class='grainnumber qty' ng-model='addarec.newRec.grainqty4'
+		placeholder='lbs' step='any'>
+		<input type='text' class='addgrain ing' ng-model='addarec.newRec.grain4' 
+	 placeholder='Grain'><br>
+		<input type='number' class='grainnumber qty' ng-model='addarec.newRec.grainqty5'
+		placeholder='lbs' step='any'>
+		<input type='text' class='addgrain ing' ng-model='addarec.newRec.grain5' 
+	 placeholder='Grain'><br>
+		</section>
+
 		<label>Hops</label>
-		<input type='text' class='addhops' ng-model='addarec.newRec.hop1' 
-		placeholder='Hops'>	
-		<input type='number' class='hopnumber' ng-model='addarec.newRec.hopqty1' 
-		placeholder='in ozs' step='any'>	
+		<section class='hopssection'>	
+		<input type='number' class='hopnumber qty' ng-model='addarec.newRec.hopqty1' 
+		placeholder='ozs' step='any'>	
+		<input type='text' class='addhops ing' ng-model='addarec.newRec.hop1' 
+	 placeholder='Hops'><br>	
+		<input type='number' class='hopnumber qty' ng-model='addarec.newRec.hopqty2' 
+		placeholder='ozs' step='any'>	
+		<input type='text' class='addhops ing' ng-model='addarec.newRec.hop2' 
+	 placeholder='Hops'><br>	
+		<input type='number' class='hopnumber qty' ng-model='addarec.newRec.hopqty3' 
+		placeholder='ozs' step='any'>	
+		<input type='text' class='addhops ing' ng-model='addarec.newRec.hop3' 
+	 placeholder='Hops'><br>	
+		<input type='number' class='hopnumber qty' ng-model='addarec.newRec.hopqty4' 
+		placeholder='ozs' step='any'>	
+		<input type='text' class='addhops ing' ng-model='addarec.newRec.hop4' 
+	 placeholder='Hops'><br>	
+		<input type='number' class='hopnumber qty' ng-model='addarec.newRec.hopqty5' 
+		placeholder='ozs' step='any'>	
+		<input type='text' class='addhops ing' ng-model='addarec.newRec.hop5' 
+	 placeholder='Hops'><br>	
+		</section>		
+	
 		<label>Other Aditions</label>
-		<input type='text' class='addother' ng-model='addarec.newRec.other1' 
-		placeholder='Misc. Addition'>	
-		<input type='number' class='miscnumber' ng-model='addarec.newRec.otherqty1'
-		placeholder='in ozs' step='any'>	
+		<section class='othersection'>	
+		<input type='number' class='miscnumber qty' ng-model='addarec.newRec.otherqty1'
+		placeholder='ozs' step='any'>
+		<input type='text' class='addother ing' ng-model='addarec.newRec.other1' 
+	 placeholder='Misc. Addition'><br>
+		<input type='number' class='miscnumber qty' ng-model='addarec.newRec.otherqty2'
+		placeholder='ozs' step='any'>
+		<input type='text' class='addother ing' ng-model='addarec.newRec.other2' 
+	 placeholder='Misc. Addition'><br>
+		<input type='number' class='miscnumber qty' ng-model='addarec.newRec.otherqty3'
+		placeholder='ozs' step='any'>
+		<input type='text' class='addother ing' ng-model='addarec.newRec.other3' 
+	 placeholder='Misc. Addition'><br>
+		</section>	
 		<label>Yeast</label>
-		<input type='text' class='addyeast' ng-model='addarec.newRec.yeast1' 
-		placeholder='Yeast'>
-		<input type='number' class='yeastnumber' ng-model='addarec.newRec.yeastqty1'
+		<section class='yeastsection'>	
+		<input type='number' class='yeastnumber qty' ng-model='addarec.newRec.yeastqty1'
 		placeholder='pkgs'>	
+		<input type='text' class='addyeast ing' ng-model='addarec.newRec.yeast1' 
+	 placeholder='Yeast'><br>
+		</section>	
 		<button class='addrecipebut' value='Add Recipe'>Add Recipe</button>	
+		
 		</form>	
 	</section>		
 	<a ui-sref='landing.recipe' class='canceladdrec'>Cancel (do not add recipe)</a> 
