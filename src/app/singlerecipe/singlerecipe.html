@@ -2,7 +2,6 @@
   	<div class="objcontainer">
 			<button ng-click='singlerec.stepback()'>step back</button>
 			<button ng-click='singlerec.stepfor()'>step forward</button>			
-			<p>{{singlerec.step}}</p>	
 		<section class='inglist' ng-show='singlerec.step === 1'>	
 		<h1>{{singlerec.userInfo.recipename}}</h1>
 		<h3>Grains</h3>
@@ -48,12 +47,60 @@
 			    <li>Sanitize mash tun, spoon, and everything else</li>
 			    <li>Bring water in Brew kettle to 180 degrees</li>
 			</ul>	
-		
-		
 		</section><!--prepstep-->	
-		
-		
-		
+		<section class='mash' ng-show='singlerec.step === 3'>
+			<h3>mashing!</h3>
+			<ul class="mashing">
+			        <li>Add 3 gallons of hot water to mash tun</li>
+			        <li>Stir in the grains slowly</li>
+			        <li>Once all grains are in take temperature</li>
+			        <li>Add water as needed to hit target range(usally 150-152)</li>
+			        <li>START A TIMER FOR 60 MINUTES</li>
+			</ul>		
+		</section><!--mash-->	
+		<section class='batchsparge' ng-show='singlerec.step === 4'>
+				<h3>Sparge!</h3>
+				<p>We are using batch sparge because that is the most efficient
+				for new brewers.</p>
+				<ul class="spargelist">
+				        <li class="spar">drain from mash tun into 
+								a cup of some kind</li>
+				        <li class="spar">pour this drained liquid on top of the
+								mash tun until it contains no sediment</li>
+				        <li class="spar">drain mash tun into brew kettle without
+								disturbing the grain bed</li>
+				        <li class="spar">add water stirl lightly, not violently
+						and repeat steps 1-4 until brew kettle reaches needed
+						volume. (typically about 6 gallons for a 5 gallon batch)</li>
+						<li class="spar">Take a gravity reading. REPORT</li>	
+				</ul>	
+		</section><!--sparge-->	
+		<section class='backtobrew' ng-show='singlerec.step === 5'>
+				<h3>boil</h3>	
+				<ul class="brewket">
+					<li class="brewitem">Boil.(tyically for 60 minutes)</li>
+					<li class="brewitem">TIMER!</li>
+					<li class="brewitem">add hops at appropriate times</li>
+					<li class="brewitem">add irish moss tablets at 10 minutes 
+							left</li>
+				</ul>	
+		</section><!--backtobrew-->	
+		<section class='cooling' ng-show='singlerec.step === 6'>
+				<h3>cooling</h3>
+				<p>you want to cool the wort as quickly as possible to get it 
+				below 70 degrees</p>
+				<ul class="cooling">
+				        <li>move cooled young beer to carboy, double check
+						temperature.</li>
+						<li>during drain to carboy pull a sample for gravity
+						reading, do not pour sample back into carboy, 
+						discard</li>
+				        <li>pitch yeast</li>
+				</ul>
+		</section><!--cooling-->	
+		<section class='movetoferm' ng-show='singlerec.step === 7'>
+				<h3>move to fermentation</h3>	
+		</section><!--movetoferm-->	
 		
 		<a ui-sref='landing.recipe'><p>back to recipes</p></a>	
 	</div><!--objectcontainer div -->

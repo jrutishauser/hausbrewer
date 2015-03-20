@@ -1,32 +1,27 @@
 (function(){
 'use strict';
-
 angular.module('hausbrewer')
   .controller('SinglerecipeCtrl', function ($firebaseObject, $stateParams) {
 		var info = new Firebase('https://hausbrewer.firebaseio.com/recipes/' + 
 			$stateParams.user + '/' + $stateParams.singlerecipe); 
 		this.userInfo = $firebaseObject(info); 
-		var step = 1;
-		console.log(step);	
+		var self = this;	
+		this.step = 1;
 		this.stepfor = function(){
-			if (step === 10) {
+			if (self.step === 7) {
 				return;
 			} else {
-				step++;
-				console.log(step);
-				return step;
+				self.step++;
+				return self.step;
 			}	
 		};	
 		this.stepback = function(){
-			if (step === 1) {
+			if (self.step === 1) {
 				return; 
 			} else {	
-				step--;
-				console.log(step);
-				return step;
+				self.step--;
+				return self.step;
 			}	
 		};
-		console.log(step);
-  
   });
 })();
