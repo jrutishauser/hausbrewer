@@ -1,5 +1,9 @@
 
   	<div class="objcontainer">
+			<button ng-click='singlerec.stepback()'>step back</button>
+			<button ng-click='singlerec.stepfor()'>step forward</button>			
+			<p>{{singlerec.step}}</p>	
+		<section class='inglist' ng-show='singlerec.step === 1'>	
 		<h1>{{singlerec.userInfo.recipename}}</h1>
 		<h3>Grains</h3>
 		<span>{{singlerec.userInfo.grainqty1}}</span>	
@@ -33,10 +37,24 @@
 		<span>{{singlerec.userInfo.other2}}</span><br>
 		<span>{{singlerec.userInfo.otherqty3}}</span>	
 		<span>{{singlerec.userInfo.other3}}</span><br>
-
-
-
-
+		</section><!--inglist-->
+		<section class='prepstep' ng-show='singlerec.step === 2'>
+			<h3>material preperation</h3>
+			<ul>
+				<li>Pop Yeast packet before starting.(3-12hrs @ room temp)</li>
+			    <li>calibrate thermometers</li>
+			    <li>Make 5 Gal Bucket of Sanitizer.</li>
+			    <li>Fill brew kettle with 3gals of water + 1.5qt per 2lbs of grain</li>
+			    <li>Sanitize mash tun, spoon, and everything else</li>
+			    <li>Bring water in Brew kettle to 180 degrees</li>
+			</ul>	
+		
+		
+		</section><!--prepstep-->	
+		
+		
+		
+		
 		<a ui-sref='landing.recipe'><p>back to recipes</p></a>	
 	</div><!--objectcontainer div -->
   
