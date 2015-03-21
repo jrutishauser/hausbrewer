@@ -4,6 +4,19 @@ body {
 a {
   text-decoration: none;
 }
+.logincont {
+		text-align: center;
+		clear: both;
+	img {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 2em;
+	}
+	hr {
+		margin-top: 4em;
+	}
+}
 .container {
   width: 100%;
 }
