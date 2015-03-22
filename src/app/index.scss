@@ -35,14 +35,24 @@ a {
 		text-align: center;
 	a { 
 		display: inline-block;
-		margin-right: 2em;
-		margin-left: 2em;
-		background-color: #FAFAFA;
+		margin-right: 0.5em;
+		background-color: #FEFDFD;
 		height: 3em;
 		width: 5em;
 		line-height: 3em;
 		border-radius: 10px 10px 0 0;
 	}
+	a.active{
+		background-color: #FAFAFA;
+	}
+}
+.fermcard {
+	background-color: #FAFAFA;
+	padding: 1em;
+   	h2 {
+		margin-top: 0;
+		text-align: center;
+	}	
 }
 .navbar {
   position: relative;

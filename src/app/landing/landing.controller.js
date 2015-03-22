@@ -7,4 +7,8 @@ angular.module('hausbrewer')
  	Auth.onAuth(function(user){
 		self.user = user;	
 	});
+	this.selected = 'one';
+	this.select = function(item) {
+		this.selected = item;
+	};
   });
