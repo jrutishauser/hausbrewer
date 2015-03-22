@@ -21,13 +21,23 @@ a {
 	}
 }
 .container {
-  width: 100%;
+ 	width: 100%;
+}
+.landingtitle {
+	clear: both;
+	padding-left: 1em;
+	padding-right: 1em;	
+	h1 {
+		text-align: center;
+	}
 }
 .landingnav {
 		text-align: center;
 	a { 
 		margin-right: 2em;
 		margin-left: 2em;
+		background-color: #FAFAFA;
+		height: 4em;
 }
 }
 .navbar {
@@ -90,7 +100,7 @@ a {
 	color: red;
 }
 .objcontainer {
-	background-color: gainsboro;
+	background-color: #FAFAFA;
 	border-radius: 6px;
 	text-align: center;
 	clear: both;
