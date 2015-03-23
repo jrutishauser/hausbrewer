@@ -1,7 +1,8 @@
 'use strict';
 
 angular.module('hausbrewer')
-  .controller('FermentCtrl', function ($firebaseObject, $firebaseArray, Auth) {
+  .controller('FermentCtrl', function ($firebaseObject, $firebaseArray, Auth, 
+		$state) {
    		var self = this;
 		Auth.onAuth(function(user){
 			self.user = user;	
