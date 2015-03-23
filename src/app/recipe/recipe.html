@@ -1,12 +1,11 @@
-
-  	<div class="recipecard">
-    	<h2>your recipes</h2>
-		<a ui-sref='addarecipe'>add a recipe</a> 
-		<section class='recipeitem' ng-repeat='rec in recipe.recArray'>	
-				<a ui-sref=
-				'singlerecipe({user: recipe.user.$id, singlerecipe: rec.$id})'>
+<div class="recipecard">
+	<h2>your recipes</h2>
+	<section class='recipeitem' ng-repeat='rec in recipe.recArray'>	
+		<a ui-sref=
+			'singlerecipe({user: recipe.user.$id, singlerecipe: rec.$id})'>
 				<p>{{rec.recipename}}</p></a>
-		</section>	
-	</div><!--objectcontainer div -->
+	</section><!--section w ng-repeat shows all recipes -->	
+	<a ui-sref='addarecipe'><b>+ add a recipe</b></a> 
+</div><!--objectcontainer div -->
   
 

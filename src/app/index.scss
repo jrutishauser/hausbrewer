@@ -93,9 +93,13 @@ a {
 .recipecard {
 	background-color: #FAFAFA;
 	padding: 1em;
+	font-size: 1.25em;
    	h2 {
 		margin-top: 0;
 		text-align: center;
+	}
+	a {
+		color: darkgreen;
 	}	
 }
 .recipeform {
