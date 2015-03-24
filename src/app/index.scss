@@ -188,6 +188,16 @@ a {
 	}
 	.recipeitem {
 		padding-left: 1em;
+	}
+	.addrecsec {
+		margin-left: 1em;
+		padding: 0.5em 2em;
+		outline: 2px solid $pellow;
+		display: inline-block;
+	}
+	.addrecsec:hover {
+		color: white;
+		background-color: $pellow;
 	}	
 }
 .recipeform {
