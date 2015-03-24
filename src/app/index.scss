@@ -1,6 +1,41 @@
+
+$drkbrn: #49310A;
+$drkgrn: #655B27;
+$pastellow: #ECD77D;
+$beergrey: #ACA576;
+$pellow: #A8891C;
+$prey: #605A3C;
+//font-family: 'Roboto Condensed', sans-serif;
+//font-family: 'Roboto', sans-serif;
+
+
+
 body {
-  margin: 0;
-  color: #2b1d0e;
+  	margin: 0;
+  	color: $drkbrn;
+	background-color: #EEE;
+	font-family: 'Roboto Condensed', sans-serif;
+  	h1 {
+		padding-bottom: 0.5em;
+		border-bottom: 1px solid $drkbrn;
+		margin: 0 auto;
+		margin-top: 1em;
+		font-family: 'Roboto Condensed', sans-serif;
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+	p {
+		line-height: 3ex;
+	}
+}
+.footer {
+	color: $beergrey;
+  	background-color: #222;
+	margin: 0;
+	padding: 1em;
+	p {
+		margin: 0;
+	}
 }
 a {
   text-decoration: none;
@@ -12,7 +47,7 @@ a {
 		background-size: cover;
 		height: 70vh;
 		padding-top: 2em;
-		border-bottom: 3px solid #222222;
+		border-bottom: 3px solid $drkgrn;
 	img {
 		display: block;
 		width: 9em;
@@ -38,35 +73,64 @@ a {
 	h1 {
 		text-align: center;
 	}
+	p {
+		margin: 2em 0 3em 0;
+		text-align: center;
+	}
 }
 .landingnav {
-		text-align: center;
-	a { 
+	a {
+		text-align: center;	
 		display: inline-block;
-		margin-right: 0.5em;
-		background-color: #EEEEEE;
 		height: 3em;
-		width: 5em;
+		margin-left: -0.3em;
+		width: 7em;
 		line-height: 3em;
-		border-radius: 10px 10px 0 0;
+		text-transform: uppercase;
 	}
-	a.active{
-		background-color: #FDF5E2;
+	.rectab {
+		background-color: $pastellow;
+		color: $pellow;
+	}
+	.fertab {
+		background-color: $beergrey;
+		color: $prey;
 	}
 }
 .fermcard {
-	background-color: #FDF5E2;
-	padding: 1em;
+	background-color: $beergrey;
+	padding-top: 1em;
+	font-size: 1.25em;
+	padding-bottom: 1em;
    	h2 {
 		margin-top: 0;
-		text-align: center;
+		margin: 0;
+		text-align: left;
+		text-transform: uppercase;
+		font-weight: normal;
+		font-size: 2.3ex;
+		padding: 0.5em 0 0.5em 0.5em;
+		background-color: $prey;
+		color: white;
+	}
+	p, a {
+	color: $prey;
+	}
+	p:hover {
+		color: white;
+	}
+	a:hover {
+		color: white;
+	}
+	.fermitems {
+		padding-left: 1em;
 	}	
 }
 .navbar {
   	position: relative;
   	min-height: 50px;
   	margin-bottom: 0;
-  	background-color: #222;
+  	background-color: $drkgrn;
 	padding-top: 3px;
 	
   &>a {
@@ -102,15 +166,28 @@ a {
   }
 }
 .recipecard {
-	background-color: #FDF5E2;
-	padding: 1em;
+	background-color: $pastellow;
 	font-size: 1.25em;
+	padding-top: 1em;
+	padding-bottom: 2em;
    	h2 {
-		margin-top: 0;
-		text-align: center;
+		margin: 0;
+		text-align: left;
+		text-transform: uppercase;
+		font-weight: normal;
+		font-size: 2.3ex;
+		padding: 0.5em 0 0.5em 0.5em;
+		background-color: $pellow;
+		color: white;
 	}
 	a {
-		color: darkgreen;
+		color: $pellow;
+	}
+	a:hover {
+		color: white;
+	}
+	.recipeitem {
+		padding-left: 1em;
 	}	
 }
 .recipeform {
