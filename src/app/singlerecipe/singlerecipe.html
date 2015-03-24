@@ -99,10 +99,22 @@
 				</ul>
 		</section><!--cooling-->	
 		<section class='movetoferm' ng-show='singlerec.step === 7'>
-				<h3>move to fermentation</h3>	
+				<h3>move to fermentation</h3>
+				
+				<h4>{{singlerec.userInfo.recipename}}</h4>
+				<form ng-submit='singlerec.ptoferm(singlerec.userInfo)' 
+						class='addtoferm'>
+					<input type='text' value='{{singlerec.userInfo.recipename}}'
+						ng-model='singlerec.userInfo.recipename'>
+					<label for='fdays'>Days to ferment</label>
+					<input type='number' id='fdays' ng-model='singlerec.userInfo.days'>
+					<button class='addtoferm'>
+					add recipe to fermentation</button>	
+				</form>
 		</section><!--movetoferm-->	
 		
-		<a ui-sref='landing.recipe'><p>back to recipes</p></a>	
+		<a ui-sref='landing.recipe'><p>back to recipes</p></a>
+
 	</div><!--objectcontainer div -->
   
 

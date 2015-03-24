@@ -1,7 +1,9 @@
 
   	<div class="fermcard">
-    	<h2>ferment</h2>
-		<p>batches</p>
+    	<h2>fermenting</h2>
+		<section class='fermitems' ng-repeat='singlef in ferment.fermArray'>
+				<p>{{singlef.recipename}} {{singlef.days}}</p>
+		</section><!-- ng-repeated fermentation items -->
  
 	
 	
