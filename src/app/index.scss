@@ -114,18 +114,37 @@ a {
 	}	
 }
 .recipeform {
+		padding-top: 1em;
+	h1 {
+		margin: 0;
+		text-align: center;
+		}
 	label {
 		display: block;
 		margin-top: 1em;
 	}
+	.ing {
+		width: 60%;
+	}
+	.qty {
+		width: 20%;
+	}
 	input { 
 		margin: 0 auto;
+		height: 3em;
+		border: 0;
+		margin: .4em;
+		font-size: 90%;
+		padding: 0;
+		padding-left: 0.5em;
 	}
 	button {
 		margin-top: 1em;
 		font-size: 1.5em;
 		color: green;
-		margin-bottom: 0.5em;
+		text-align: center;
+		outline: 1px solid black;
+		margin: 0 auto;
 	}
 	.qty {
 		width: 4em;	
