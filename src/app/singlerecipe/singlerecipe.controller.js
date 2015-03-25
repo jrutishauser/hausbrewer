@@ -9,7 +9,7 @@ angular.module('hausbrewer')
 		var self = this;	
 		this.step = 1;
 		this.stepfor = function(){
-			if (self.step === 7) {
+			if (self.step === 9) {
 				return;
 			} else {
 				self.step++;
