@@ -2,8 +2,8 @@
 		<section class='inglist' ng-show='singlerec.step === 1'>	
 		<h1>{{singlerec.userInfo.recipename}}</h1>
 		<section class='ingbuttonspg'>	
-			<a ui-sref='landing.recipe'><- back</a>
-			<a ng-click='singlerec.stepfor()'>brew -></a>		
+			<a ui-sref='landing.recipe'>back</a>
+			<a ng-click='singlerec.stepfor()'>brew</a>		
 		</section><!--ingbuttonspg -->
 		<h2>Grains</h2>
 		<span>{{singlerec.userInfo.grainqty1}}</span>	
@@ -42,8 +42,8 @@
 		<section class='prepstep' ng-show='singlerec.step === 2'>
 			<h1>material preperation</h1>
 		<section class='ingbuttonspg'>	
-			<a ng-click='singlerec.stepback()'><- back</a>
-			<a ng-click='singlerec.stepfor()'>next -></a>		
+			<a ng-click='singlerec.stepback()'>back</a>
+			<a ng-click='singlerec.stepfor()'>next</a>		
 		</section><!--ingbuttonspg -->
 			<ul>
 				<li>Pop Yeast packet before starting.(3-12hrs @ room temp)</li>
@@ -57,8 +57,8 @@
 		<section class='mash' ng-show='singlerec.step === 3'>
 			<h1>mashing</h1>
 			<section class='ingbuttonspg'>	
-				<a ng-click='singlerec.stepback()'><- back</a>
-				<a ng-click='singlerec.stepfor()'>next -></a>		
+				<a ng-click='singlerec.stepback()'>back</a>
+				<a ng-click='singlerec.stepfor()'>next</a>		
 			</section><!--ingbuttonspg -->
 			<ul class="mashing">
 			        <li>Add 3 gallons of hot water to mash tun</li>
@@ -71,8 +71,8 @@
 		<section class='batchsparge' ng-show='singlerec.step === 4'>
 				<h1>Sparge</h1>
 			<section class='ingbuttonspg'>	
-				<a ng-click='singlerec.stepback()'><- back</a>
-				<a ng-click='singlerec.stepfor()'>next -></a>		
+				<a ng-click='singlerec.stepback()'>back</a>
+				<a ng-click='singlerec.stepfor()'>next</a>		
 			</section><!--ingbuttonspg -->
 				<p>We are using batch sparge because that is the most efficient
 				for new brewers.</p>
@@ -92,8 +92,8 @@
 		<section class='backtobrew' ng-show='singlerec.step === 5'>
 				<h1>boil</h1>	
 			<section class='ingbuttonspg'>	
-				<a ng-click='singlerec.stepback()'><- back</a>
-				<a ng-click='singlerec.stepfor()'>next -></a>		
+				<a ng-click='singlerec.stepback()'>back</a>
+				<a ng-click='singlerec.stepfor()'>next</a>		
 			</section><!--ingbuttonspg -->
 				<ul class="brewket">
 					<li class="brewitem">Boil.(tyically for 60 minutes)</li>
@@ -106,8 +106,8 @@
 		<section class='cooling' ng-show='singlerec.step === 6'>
 				<h1>cooling</h1>
 			<section class='ingbuttonspg'>	
-				<a ng-click='singlerec.stepback()'><- back</a>
-				<a ng-click='singlerec.stepfor()'>next -></a>		
+				<a ng-click='singlerec.stepback()'>back</a>
+				<a ng-click='singlerec.stepfor()'>next</a>		
 			</section><!--ingbuttonspg -->
 				<p>you want to cool the wort as quickly as possible to get it 
 				below 70 degrees</p>
