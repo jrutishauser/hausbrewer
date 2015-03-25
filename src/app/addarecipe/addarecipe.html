@@ -74,14 +74,15 @@
 	 placeholder='Yeast Strain'>
 		<input type='number' class='yeastnumber qty' ng-model='addarec.newRec.yeastqty1'
 	 placeholder='pkgs'><br>	
-		</section>	
-		<button class='addrecipebut' value='Add Recipe'>Add Recipe</button>	
-		
+		</section>
+		<div class='buttonwrap'>	
+		<button class='addrecipebut' value='Add Recipe'>+ add recipe</button>	
+		<div class='canceladd'><a ui-sref='landing.recipe' class='canceladdrec'>
+			- cancel</a></div> 
+		</div>
 		</form>	
 	</section>		
-	<a ui-sref='landing.recipe' class='canceladdrec'>Cancel (do not add recipe)</a> 
   
-  <hr>
   <div class="footer">
     <p>This project is open source! Open a pull request with ideas and/or 
 	solutions <a href='https://github.com/jrutishauser/hausbrewer/'>hausbrewer

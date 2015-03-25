@@ -191,6 +191,7 @@ a {
 	}
 	.addrecsec {
 		margin-left: 1em;
+		margin-top: 1em;
 		padding: 0.5em 2em;
 		outline: 2px solid $pellow;
 		display: inline-block;
@@ -202,6 +203,8 @@ a {
 }
 .recipeform {
 		padding-top: 1em;
+		background-color: $pastellow;
+		padding-bottom: 2em;
 	h1 {
 		margin: 0;
 		text-align: center;
@@ -209,6 +212,16 @@ a {
 	label {
 		display: block;
 		margin-top: 1em;
+	}
+   	h2 {
+		margin: 0 0 1em 0;
+		text-align: left;
+		text-transform: uppercase;
+		font-weight: normal;
+		font-size: 2.3ex;
+		padding: 0.5em 0 0.5em 0.5em;
+		background-color: $pellow;
+		color: white;
 	}
 	.ing {
 		width: 60%;
@@ -225,22 +238,56 @@ a {
 		padding: 0;
 		padding-left: 0.5em;
 	}
+	.recipename {
+		width: 90%;
+	}
 	button {
-		margin-top: 1em;
 		font-size: 1.5em;
 		color: green;
 		text-align: center;
-		outline: 1px solid black;
+		outline: 2px solid $pellow;
 		margin: 0 auto;
+		border: 0;
+		padding: 0.4em 0.25em;
+		background-color: $pastellow;
+	}
+	button:hover {
+		color: white;
+		background-color: $pellow;
+	}	
+	.buttonwrap {
+		display: table;
+		padding: 0;
+		margin: 2em auto 0 auto;
+		width: 19em;
+	}
+	.canceladd {
+		float: right;
+		padding: 0.4em 1.5em;
+		font-size: 1.5em;
+		color: green;
+		text-align: center;
+		outline: 2px solid $pellow;
+		margin: 0 auto;
+		border: 0;
+		background-color: $pastellow;
+		color: red;
+		a {
+			color: red;
+		}
+	}
+	.canceladd:hover {
+		color: white;
+		background-color: $pellow;
+			a {
+				color: white;
+			}
 	}
 	.qty {
 		width: 4em;	
 	}
 	.ing {
 	}
-}
-.canceladdrec {
-	color: red;
 }
 .objcontainer {
 	background-color: #FAFAFA;
