@@ -50,18 +50,11 @@
 			<ul class='steps'>
 				<li>Pop Yeast packet before starting.(3-12hrs @ room temp)</li>
 			    <li>calibrate thermometers</li>
-			    <li>Make 5 Gal Bucket of Sanitizer.</li>
+			    <li>Make 5 Gal Bucket of Sanitizer. Drop all tools in</li>
 			    <li>Fill brew kettle with 3gals of water + 1.5qt per 2lbs of grain</li>
-			    <li>Sanitize mash tun, spoon, and everything else</li>
-			    <li>Bring water in Brew kettle to 180 degrees</li>
 			</ul>
 			<h2>steps</h2>	
 			<ul class='steps'>
-				<li>Pop Yeast packet before starting.(3-12hrs @ room temp)</li>
-			    <li>calibrate thermometers</li>
-			    <li>Make 5 Gal Bucket of Sanitizer.</li>
-			    <li>Fill brew kettle with 3gals of water + 1.5qt per 2lbs of grain</li>
-			    <li>Sanitize mash tun, spoon, and everything else</li>
 			    <li>Bring water in Brew kettle to 180 degrees</li>
 			</ul>	
 		<section class='ingbuttonspg'>	
@@ -76,12 +69,28 @@
 				<a ng-click='singlerec.stepfor()'>next</a>		
 			</section><!--ingbuttonspg -->
 			<img src='/assets/images/mash.png' class='stepimg'>
+			<h2>before starting</h2>
+			<ul class="steps">
+			        <li>have thermometer ready</li>
+			        <li>have 180 degree water ready</li>
+			        <li>Gather the grains</li>
+					<li>{{singlerec.userInfo.grain1}} 
+							{{singlerec.userInfo.grainqty1}}</li>
+					<li>{{singlerec.userInfo.grain2}} 
+							{{singlerec.userInfo.grainqty2}}</li>
+					<li>{{singlerec.userInfo.grain3}} 
+							{{singlerec.userInfo.grainqty3}}</li>
+					<li>{{singlerec.userInfo.grain4}} 
+							{{singlerec.userInfo.grainqty4}}</li>
+			</ul>		
+			<h2>steps</h2>
 			<ul class="steps">
 			        <li>Add 3 gallons of hot water to mash tun</li>
 			        <li>Stir in the grains slowly</li>
 			        <li>Once all grains are in take temperature</li>
 			        <li>Add water as needed to hit target range(usally 150-152)</li>
 			        <li>START A TIMER FOR 60 MINUTES</li>
+			        <li>place lid on mash tun, fight the urge to check temp often.</li>
 			</ul>		
 		<section class='ingbuttonspg'>	
 			<a ng-click='singlerec.stepback()'>back</a>
@@ -95,19 +104,25 @@
 				<a ng-click='singlerec.stepfor()'>next</a>		
 			</section><!--ingbuttonspg -->
 			<img src='/assets/images/sparge.png' class='stepimg'>
-				<p>We are using batch sparge because that is the most efficient
-				for new brewers.</p>
+			<h2>before starting</h2>
+				<ul class="steps">
+						<li class="spar">brew kettle ready</li>	
+						<li class="spar">any necessary tubing for mash tun</li>	
+						<li class="spar">hydrometer ready</li>	
+						<li class="spar">large spoon to stir grains</li>	
+				</ul>	
+			<h2>steps</h2>
 				<ul class="steps">
 				        <li class="spar">drain from mash tun into 
 								a cup of some kind</li>
-				        <li class="spar">pour this drained liquid on top of the
+				        <li class="spar">pour cup on top of the
 								mash tun until it contains no sediment</li>
 				        <li class="spar">drain mash tun into brew kettle without
-								disturbing the grain bed</li>
-				        <li class="spar">add water stirl lightly, not violently
-						and repeat steps 1-4 until brew kettle reaches needed
+								disturbing the grain bed until empty</li>
+				        <li class="spar">add water stir lightly,
+						and repeat steps above until brew kettle reaches needed
 						volume. (typically about 6 gallons for a 5 gallon batch)</li>
-						<li class="spar">Take a gravity reading. REPORT</li>	
+						<li class="spar">Take a gravity reading.</li>	
 				</ul>	
 		<section class='ingbuttonspg'>	
 			<a ng-click='singlerec.stepback()'>back</a>
@@ -121,12 +136,21 @@
 				<a ng-click='singlerec.stepfor()'>next</a>		
 			</section><!--ingbuttonspg -->
 			<img src='/assets/images/boilwort.png' class='stepimg'>
+			<h2>before starting</h2>
 				<ul class="steps">
-					<li class="brewitem">Boil.(tyically for 60 minutes)</li>
-					<li class="brewitem">TIMER!</li>
+					<li class="brewitem">hops</li>
+					<li class="brewitem">irish moss tablets</li>
+					<li class="brewitem">about 6 gals of wort should be in kettle</li>
+					<li class="brewitem">during the boil there should be NO lid
+						on the brew kettle</li>
+				</ul>	
+				<h2>steps</h2>
+				<ul class="steps">
+					<li class="brewitem">Boil.(typically for 60 minutes)</li>
 					<li class="brewitem">add hops at appropriate times</li>
-					<li class="brewitem">add irish moss tablets at 10 minutes 
-							left</li>
+					<li class="brewitem">add irish moss tablets and copper coils
+						   	at 10 minutes remaining</li>
+					<li class="brewitem">TIMER!</li>
 				</ul>	
 		<section class='ingbuttonspg'>	
 			<a ng-click='singlerec.stepback()'>back</a>
@@ -140,14 +164,16 @@
 				<a ng-click='singlerec.stepfor()'>next</a>		
 			</section><!--ingbuttonspg -->
 			<img src='/assets/images/cool.png' class='stepimg'>
-				<p>you want to cool the wort as quickly as possible to get it 
-				below 70 degrees</p>
+			<h2>before starting</h2>	
 				<ul class="steps">
-				        <li>move cooled young beer to carboy, double check
-						temperature.</li>
-						<li>during drain to carboy pull a sample for gravity
-						reading, do not pour sample back into carboy, 
-						discard</li>
+						<li>ensure everything is sanitized</li>
+						<li>be careful as you are cooling not to splash or
+							return any samples back to the kettle</li>
+				</ul>
+				<h2>steps</h2>
+				<ul class="steps">
+						<li>very carefully get your wort to below 70 degrees
+							as quickly as possible</li>
 				</ul>
 		<section class='ingbuttonspg'>	
 			<a ng-click='singlerec.stepback()'>back</a>
@@ -161,6 +187,7 @@
 				<a ng-click='singlerec.stepfor()'>next</a>		
 			</section><!--ingbuttonspg -->
 			<img src='/assets/images/tocarboy.png' class='stepimg'>
+			<h2>steps</h2>
 				<ul class="steps">
 				        <li>move cooled young beer to carboy, double check
 						temperature.</li>
@@ -180,6 +207,13 @@
 				<a ng-click='singlerec.stepfor()'>next</a>		
 			</section><!--ingbuttonspg -->
 			<img src='/assets/images/pitchyeast.png' class='stepimg'>
+			<h2>before starting</h2>
+				<ul class="steps">
+						<li>yeast packet needed</li>
+						<li>be extremely careful, any contamination added to 
+							the carboy now will remain</li>
+				</ul>
+			<h2>steps</h2>
 				<ul class="steps">
 						<li>confirm young beer temperature is at target</li>
 						<li>with everything sanitized pitch yeast</li>
