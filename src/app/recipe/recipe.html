@@ -5,7 +5,10 @@
 			'singlerecipe({user: recipe.user.$id, singlerecipe: rec.$id})'>
 				<p>{{rec.recipename}}</p></a>
 	</section><!--section w ng-repeat shows all recipes -->	
-	<a ui-sref='addarecipe'><b>+ add a recipe</b></a> 
+		<a ui-sref='addarecipe'>
+			<section class='addrecsec'>	
+				+ add recipe 
+			</section></a>
 </div><!--objectcontainer div -->
   
 
