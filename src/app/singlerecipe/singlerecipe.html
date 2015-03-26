@@ -1,10 +1,11 @@
 
-  	<div class="objcontainer">
-			<button ng-click='singlerec.stepback()'>step back</button>
-			<button ng-click='singlerec.stepfor()'>step forward</button>			
 		<section class='inglist' ng-show='singlerec.step === 1'>	
 		<h1>{{singlerec.userInfo.recipename}}</h1>
-		<h3>Grains</h3>
+		<section class='ingbuttonspg'>	
+			<a ui-sref='landing.recipe'>back</a>
+			<a ng-click='singlerec.stepfor()'>brew</a>		
+		</section><!--ingbuttonspg -->
+		<h2>Grains</h2>
 		<span>{{singlerec.userInfo.grainqty1}}</span>	
 		<span>{{singlerec.userInfo.grain1}}</span><br>	
 		<span>{{singlerec.userInfo.grainqty2}}</span>
@@ -15,7 +16,7 @@
 		<span>{{singlerec.userInfo.grain4}}</span><br>
 		<span>{{singlerec.userInfo.grainqty5}}</span>	
 		<span>{{singlerec.userInfo.grain5}}</span><br>
-		<h3>Hops</h3>		
+		<h2>Hops</h2>		
 		<span>{{singlerec.userInfo.hopqty1}}</span>	
 		<span>{{singlerec.userInfo.hop1}}</span><br>
 		<span>{{singlerec.userInfo.hopqty2}}</span>	
@@ -26,10 +27,11 @@
 		<span>{{singlerec.userInfo.hop4}}</span><br>
 		<span>{{singlerec.userInfo.hopqty5}}</span>	
 		<span>{{singlerec.userInfo.hop5}}</span><br>
-		<h3>Yeast</h3>	
+		<h2>Yeast</h2>	
 		<span>{{singlerec.userInfo.yeastqty1}}</span>	
 		<span>{{singlerec.userInfo.yeast1}}</span><br>
-		<h3>Other</h3>	
+		<span></span>
+		<h2>Other</h2>	
 		<span>{{singlerec.userInfo.otherqty1}}</span>	
 		<span>{{singlerec.userInfo.other1}}</span><br>
 		<span>{{singlerec.userInfo.otherqty2}}</span>	
@@ -38,8 +40,13 @@
 		<span>{{singlerec.userInfo.other3}}</span><br>
 		</section><!--inglist-->
 		<section class='prepstep' ng-show='singlerec.step === 2'>
-			<h3>material preperation</h3>
-			<ul>
+			<h1>material preperation</h1>
+		<section class='ingbuttonspg'>	
+			<a ng-click='singlerec.stepback()'>back</a>
+			<a ng-click='singlerec.stepfor()'>next</a>		
+		</section><!--ingbuttonspg -->
+		<img src='/assets/images/prep.png' class='stepimg'>
+			<ul class='steps'>
 				<li>Pop Yeast packet before starting.(3-12hrs @ room temp)</li>
 			    <li>calibrate thermometers</li>
 			    <li>Make 5 Gal Bucket of Sanitizer.</li>
@@ -49,8 +56,13 @@
 			</ul>	
 		</section><!--prepstep-->	
 		<section class='mash' ng-show='singlerec.step === 3'>
-			<h3>mashing!</h3>
-			<ul class="mashing">
+			<h1>mashing</h1>
+			<section class='ingbuttonspg'>	
+				<a ng-click='singlerec.stepback()'>back</a>
+				<a ng-click='singlerec.stepfor()'>next</a>		
+			</section><!--ingbuttonspg -->
+			<img src='/assets/images/mash.png' class='stepimg'>
+			<ul class="steps">
 			        <li>Add 3 gallons of hot water to mash tun</li>
 			        <li>Stir in the grains slowly</li>
 			        <li>Once all grains are in take temperature</li>
@@ -59,10 +71,15 @@
 			</ul>		
 		</section><!--mash-->	
 		<section class='batchsparge' ng-show='singlerec.step === 4'>
-				<h3>Sparge!</h3>
+				<h1>Sparge</h1>
+			<section class='ingbuttonspg'>	
+				<a ng-click='singlerec.stepback()'>back</a>
+				<a ng-click='singlerec.stepfor()'>next</a>		
+			</section><!--ingbuttonspg -->
+			<img src='/assets/images/sparge.png' class='stepimg'>
 				<p>We are using batch sparge because that is the most efficient
 				for new brewers.</p>
-				<ul class="spargelist">
+				<ul class="steps">
 				        <li class="spar">drain from mash tun into 
 								a cup of some kind</li>
 				        <li class="spar">pour this drained liquid on top of the
@@ -76,8 +93,13 @@
 				</ul>	
 		</section><!--sparge-->	
 		<section class='backtobrew' ng-show='singlerec.step === 5'>
-				<h3>boil</h3>	
-				<ul class="brewket">
+				<h1>boil</h1>	
+			<section class='ingbuttonspg'>	
+				<a ng-click='singlerec.stepback()'>back</a>
+				<a ng-click='singlerec.stepfor()'>next</a>		
+			</section><!--ingbuttonspg -->
+			<img src='/assets/images/boilwort.png' class='stepimg'>
+				<ul class="steps">
 					<li class="brewitem">Boil.(tyically for 60 minutes)</li>
 					<li class="brewitem">TIMER!</li>
 					<li class="brewitem">add hops at appropriate times</li>
@@ -86,35 +108,65 @@
 				</ul>	
 		</section><!--backtobrew-->	
 		<section class='cooling' ng-show='singlerec.step === 6'>
-				<h3>cooling</h3>
+				<h1>cooling</h1>
+			<section class='ingbuttonspg'>	
+				<a ng-click='singlerec.stepback()'>back</a>
+				<a ng-click='singlerec.stepfor()'>next</a>		
+			</section><!--ingbuttonspg -->
+			<img src='/assets/images/cool.png' class='stepimg'>
 				<p>you want to cool the wort as quickly as possible to get it 
 				below 70 degrees</p>
-				<ul class="cooling">
+				<ul class="steps">
 				        <li>move cooled young beer to carboy, double check
 						temperature.</li>
 						<li>during drain to carboy pull a sample for gravity
 						reading, do not pour sample back into carboy, 
 						discard</li>
-				        <li>pitch yeast</li>
 				</ul>
 		</section><!--cooling-->	
-		<section class='movetoferm' ng-show='singlerec.step === 7'>
-				<h3>move to fermentation</h3>
-				
+		<section class='tocarboy' ng-show='singlerec.step === 7'>
+				<h1>to the carboy</h1>
+			<section class='ingbuttonspg'>	
+				<a ng-click='singlerec.stepback()'>back</a>
+				<a ng-click='singlerec.stepfor()'>next</a>		
+			</section><!--ingbuttonspg -->
+			<img src='/assets/images/tocarboy.png' class='stepimg'>
+				<ul class="steps">
+				        <li>move cooled young beer to carboy, double check
+						temperature.</li>
+						<li>during drain to carboy pull a sample for gravity
+						reading, do not pour sample back into carboy, 
+						discard</li>
+				</ul>
+		</section><!--tocarboy-->	
+		<section class='pitchyeast' ng-show='singlerec.step === 8'>
+				<h1>pitch yeast</h1>
+			<section class='ingbuttonspg'>	
+				<a ng-click='singlerec.stepback()'>back</a>
+				<a ng-click='singlerec.stepfor()'>next</a>		
+			</section><!--ingbuttonspg -->
+			<img src='/assets/images/pitchyeast.png' class='stepimg'>
+				<ul class="steps">
+						<li>confirm young beer temperature is at target</li>
+						<li>with everything sanitized pitch yeast</li>
+				</ul>
+		</section><!--tocarboy-->	
+		<section class='movetoferm' ng-show='singlerec.step === 9'>
+				<h1>move to fermentation</h1>
+				<p>Below you can change the name of the batch and add how many
+				days this batch needs to ferment.(typically 21 days)</p>	
 				<h4>{{singlerec.userInfo.recipename}}</h4>
 				<form ng-submit='singlerec.ptoferm(singlerec.userInfo)' 
 						class='addtoferm'>
 					<input type='text' value='{{singlerec.userInfo.recipename}}'
 						ng-model='singlerec.userInfo.recipename'>
-					<label for='fdays'>Days to ferment</label>
-					<input type='number' id='fdays' ng-model='singlerec.userInfo.days'>
+					<input type='number' id='fdays' 
+					ng-model='singlerec.userInfo.days' placeholder='days to ferment'>
 					<button class='addtoferm'>
-					add recipe to fermentation</button>	
+					add to fermentation</button>	
 				</form>
 		</section><!--movetoferm-->	
 		
-		<a ui-sref='landing.recipe'><p>back to recipes</p></a>
 
-	</div><!--objectcontainer div -->
   
 

@@ -2,16 +2,15 @@
   	<div class='landingtitle'>
     	<h1>Brew Management</h1>
 		<p>Good to see you again {{land.user.fullName}}. 
-		What are you brewing today?</p>
+		Welcome to Hausbrewer, what are you brewing today?</p>
 	</div><!--landing title-->
 	<nav class='landingnav'>	
-			<a ui-sref='landing.recipe' ng-click='land.select(1)' 
+			<a ui-sref='landing.recipe' class='rectab' ng-click='land.select(1)' 
 				ng-class='{active: land.selected === 1}'>Recipe</a>
-		<a ui-sref='landing.ferment' ng-click='land.select(2)' 
+		<a ui-sref='landing.ferment' class='fertab' ng-click='land.select(2)' 
 				ng-class='{active: land.selected === 2}'>Ferment</a>	
 	</nav>	
 	<div ui-view></div><!--view for recipes and ferment show here--> 
-  <hr>
   <div class="footer">
     <p>This project is open source. Open a pull request with ideas and/or 
 	solutions <a href='https://github.com/jrutishauser/hausbrewer/'>hausbrewer
