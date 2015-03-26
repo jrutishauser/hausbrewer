@@ -303,12 +303,13 @@ a {
 	}
 }
 .steps {
+		margin-bottom: 3em;
 	li {
 		font-family: 'Roboto', sans-serif;
 		margin-bottom: 1em;
 		list-style-type: none;
 		border-left: 2px solid $pellow;
-		padding-left: 1em;	
+		padding-left: 1em;
 	}
 }
 .stepimg {
@@ -316,6 +317,7 @@ a {
 	margin: 0 auto;
 	display: block;
 	border: 5px solid $offw;
+	margin-bottom: 2em;
 	}
 .ingbuttonspg {
 	text-align: center;
@@ -349,6 +351,17 @@ a {
 	span {
 		margin-left: 1em;
 	}
+}
+h2 {
+	margin-top: 0;
+	margin: 0;
+	text-align: left;
+	text-transform: uppercase;
+	font-weight: normal;
+	font-size: 2.3ex;
+	padding: 0.5em 0 0.5em 0.5em;
+	background-color: $prey;
+	color: white;
 }
 .prepstep {
 	padding-bottom: 5em;
