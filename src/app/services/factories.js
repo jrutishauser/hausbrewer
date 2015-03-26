@@ -29,6 +29,8 @@ angular.module('hausbrewer')
 		loggedIn: function(){
 			if(auth.getAuth()){
 				return true;
+			} else {
+				$state.go('home');
 			}
 		}	
 	};

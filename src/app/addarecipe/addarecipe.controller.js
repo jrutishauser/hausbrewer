@@ -11,7 +11,7 @@ angular.module('hausbrewer')
 	//this.newRec = {
 	//	recipename: ''	
 	//};
-	
+	Auth.loggedIn();	
 	this.submitRecipe = function (rec) {
 		this.obj.$add(rec);	
 		$state.go('landing.recipe');	
